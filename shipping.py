@@ -8,11 +8,13 @@ weight = 30
 #this is in dollars 
 flat_charge_ground_shipping = 20
 #Conditional for how much package will cost based on weight for ground shipping
-if weight <= 2:
-  print(flat_charge_ground_shipping + 1.50)
+if weight > 0 and weight <= 2:
+  print(flat_charge_ground_shipping + (weight * 1.50))
 elif weight > 2 and weight <= 6:
-  print(flat_charge_ground_shipping + 3.00)
+  print(flat_charge_ground_shipping + (weight * 3.00))
 elif weight > 6 and weight <= 10:
-  print(flat_charge_ground_shipping + 4.00)
+  print(flat_charge_ground_shipping + (weight * 4.00))
 elif weight > 10:
-  print(flat_charge_ground_shipping + 4.75)
+  print(flat_charge_ground_shipping + (weight * 4.75))
+else:
+  print("ERROR")
