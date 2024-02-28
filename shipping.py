@@ -8,7 +8,7 @@ error_message = "ERROR: Invalid weight"
 #Ground shipping
 
 #this is the flat charge amount for ground shipping packages
-#this is in dollars 
+#in dollars 
 flat_charge_ground_shipping = 20
 greeting_for_ground_shipping_cost = "Amount Due for Ground Shipping: "
 #Conditional for how much package will cost based on weight for ground shipping
@@ -29,7 +29,7 @@ else:
 
 #Ground Shipping Premium
 #flat charge for ground shipping premium
-#this is in dollars
+#in dollars
 flat_charge_ground_shipping_premium = 125
 greeting_for_ground_premium_shipping_cost = "Amount Due for Ground Shipping Premium: "
 if weight > 0:
